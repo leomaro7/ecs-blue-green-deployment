@@ -73,6 +73,7 @@ export class EcsCicdStack extends cdk.Stack {
               branch: props.githubBranch || 'main',
               connectionArn: props.codestarConnectionArn,
               output: sourceOutput,
+              triggerOnPush: true,
             }),
           ],
         },
