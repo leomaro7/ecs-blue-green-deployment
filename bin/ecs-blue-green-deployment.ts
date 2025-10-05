@@ -17,7 +17,7 @@ const githubRepo = app.node.tryGetContext('githubRepo') || 'ecs-blue-green-deplo
 const githubBranch = app.node.tryGetContext('githubBranch') || 'main';
 
 // CodeStar Connection ARN (Context から取得、必須)
-const codestarConnectionArn = app.node.tryGetContext('codestarConnectionArn') || 'arn:aws:codeconnections:ap-northeast-1:268546037544:connection/970a43f9-1b71-4014-bf1b-badd86d95b6d';
+const codestarConnectionArn = app.node.tryGetContext('codestarConnectionArn') || 'arn:aws:codeconnections:ap-northeast-1:268546037544:connection/9481d102-2d96-42b4-850c-e7091f3a1de5';
 if (!codestarConnectionArn) {
   throw new Error('codestarConnectionArn context value is required. Please set it using: cdk deploy -c codestarConnectionArn=arn:aws:codestar-connections:region:account:connection/connection-id');
 }
