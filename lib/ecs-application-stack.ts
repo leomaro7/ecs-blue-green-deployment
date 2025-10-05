@@ -81,7 +81,7 @@ export class EcsApplicationStack extends cdk.Stack {
       executionRole: taskExecutionRole,
     });
 
-    const containerImage = props?.containerImage || 'public.ecr.aws/docker/library/httpd:latest';
+    const containerImage = props?.containerImage || 'public.ecr.aws/docker/library/httpd:2.4';
 
     this.taskDefinition.addContainer('ApacheContainer', {
       containerName: 'apache-container',
