@@ -61,6 +61,7 @@ export class EcsCicdStack extends cdk.Stack {
     // CodePipeline
     this.pipeline = new codepipeline.Pipeline(this, 'ApachePipeline', {
       pipelineName: 'apache-pipeline',
+      pipelineType: codepipeline.PipelineType.V2,
       restartExecutionOnUpdate: false,
       stages: [
         {
