@@ -1,0 +1,11 @@
+{
+  "githubOwner": "your-github-username",
+  "githubRepo": "your-repo-name",
+  "githubBranch": "main",
+  "environment": "dev",
+  "availability-zones:account=268546037544:region=ap-northeast-1": [
+    "ap-northeast-1a",
+    "ap-northeast-1c",
+    "ap-northeast-1d"
+  ]
+}
